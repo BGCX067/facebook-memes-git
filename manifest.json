@@ -1,7 +1,7 @@
 {
   "name": "Facebook memes",
-  "version": "1.0.1",
-  "description": "Meme emoticons for Facebook chat.",
+  "version": "1.1",
+  "description": "Meme emoticons for Facebook chat that all your friends can see!",
   "icons": { "16": "icon16.png",
            "48": "icon48.png",
           "128": "icon128.png" },
@@ -12,7 +12,7 @@
    "content_scripts": [
     {
       "matches": ["http://www.facebook.com/*"],
-      "js": ["jquery-1.7.1.min.js"]
+      "js": ["jquery-1.7.1.min.js", "emotes.js"]
     }
   ],
   "permissions": [

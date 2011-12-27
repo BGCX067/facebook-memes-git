@@ -12,37 +12,9 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
-
-<style>
-body {
-  min-width:357px;
-  overflow-x:hidden;
-}
-
-img {
-  margin:5px;
-  border:2px solid black;
-  vertical-align:middle;
-  width:75px;
-  height:75px;
-}
-</style>
-<script src='jquery-1.7.1.min.js'></script>
-<script>
-function click(num) {
-  chrome.tabs.executeScript(null,
-      {code:"jQuery('div.fbNubFlyoutFooter div.inputContainer textarea.uiTextareaAutogrow.input:visible').val(jQuery('div.fbNubFlyoutFooter div.inputContainer textarea.uiTextareaAutogrow.input:visible').val()+' [["+num+"]]' )"});
-  window.close();
-}
-</script>
+<script type="text/javascript" src="memes_functions.js"></script>
 <body>
-	<img src="http://graph.facebook.com/171108522930776/picture" onClick="click('171108522930776')">
-	<img src="http://graph.facebook.com/164413893600463/picture" onClick="click('164413893600463')">
-	<img src="http://graph.facebook.com/218595638164996/picture" onClick="click('218595638164996')">
-	<img src="http://graph.facebook.com/189637151067601/picture" onClick="click('189637151067601')">
-	<img src="http://graph.facebook.com/129627277060203/picture" onClick="click('129627277060203')">
-	<img src="http://graph.facebook.com/227644903931785/picture" onClick="click('227644903931785')">
-	<img src="http://graph.facebook.com/100002752520227/picture" onClick="click('100002752520227')">
-	<img src="http://graph.facebook.com/105387672833401/picture" onClick="click('105387672833401')">
-	<img src="http://graph.facebook.com/100002727365206/picture" onClick="click('100002727365206')">
-</body
+	<script>
+		drawMemes();
+	</script>
+</body>
